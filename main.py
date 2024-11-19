@@ -404,7 +404,7 @@ def excel():  # Создание файла EXCEL
         book = openpyxl.load_workbook(days[t].name + "_1слесарь.xlsx")
     elif Flag == 2:
         exel.to_excel(days[t].name + "_2слесаря.xlsx", sheet_name="day", index=False)
-        book = openpyxl.load_workbook(days[t].name + "_2слесарь.xlsx")
+        book = openpyxl.load_workbook(days[t].name + "_2слесаря.xlsx")
     sheet = book.active
     sheet.column_dimensions['A'].width = 8
     sheet.column_dimensions['B'].width = 17
